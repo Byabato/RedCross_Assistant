@@ -31,6 +31,12 @@ def retrieve(query, top_n=5):
     """
     try:
         if not database.VECTOR_DB:
+            print("⚠ Vector database is empty")
+            return []
+        
+        # Check if Ollama is available for query embedding
+        if not database.OLLAMA_AVAILABLE:
+            print("⚠ Ollama not available - cannot process queries")
             return []
         
         # Embed the query
