@@ -1,8 +1,39 @@
-# Python
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Build files
+*.egg-info/
+dist/
+build/
+
+# Pytest
+.pytest_cache/
+
+# Ignore logs
+*.log
 .Python
 build/
 develop-eggs/
