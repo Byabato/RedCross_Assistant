@@ -1,6 +1,4 @@
-fastapi==0.104.1
-uvicorn==0.24.0
+fastapi>=0.114.0         # Supports Pydantic 2.x
+uvicorn>=0.24.0
 ollama==0.6.1
-pydantic==2.5.2
-pydantic-core==2.14.5
-starlette==0.27.0
+httpx>=0.28.0            # Required by FastAPI/ollama
